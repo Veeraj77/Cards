@@ -36,5 +36,8 @@ class Deck{
 	System.out.println("Random Card 1: " + card1);
     	System.out.println("Random Card 2: " + card2);
 	}
+	 public ArrayList<ArrayList<Card>> distributeCards(int players, int cardsPerPlayer) {
+        ArrayList<ArrayList<Card>> playersHands = new ArrayList<>();
+
 }
 
