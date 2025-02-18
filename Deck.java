@@ -43,5 +43,16 @@ class Deck{
         for (int i = 0; i < players; i++) {
             playersHands.add(new ArrayList<>());
         }
+        // Distribute cards to each player
+        for (int i = 0; i < cardsPerPlayer; i++) {
+            for (int j = 0; j < players; j++) {
+                if (!deck.isEmpty()) {
+                    playersHands.get(j).add(deck.remove(0)); // Remove card from deck and add to player's hand
+                }
+            }
+        }
+
+        return playersHands;
+    }
 }
 
