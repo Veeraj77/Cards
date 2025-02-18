@@ -29,5 +29,12 @@ class Deck{
 		Collections.shuffle(deck);
 
 	}
+	public void randomCards(){
+	Random random = new Random();
+    	Card card1 = deck.get(random.nextInt(deck.size()));
+    	Card card2 = deck.get(random.nextInt(deck.size()));
+	System.out.println("Random Card 1: " + card1);
+    	System.out.println("Random Card 2: " + card2);
+	}
 }
 
