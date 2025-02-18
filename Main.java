@@ -19,3 +19,4 @@ class Main{
 		deck.randomCards();
 		deck.displayDeck();
 		}
+		ArrayList<ArrayList<Card>> playersHands = deck.distributeCards(3, 5);
