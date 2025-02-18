@@ -28,3 +28,7 @@ class Main{
             }
             System.out.println();
         }
+        // Display remaining deck
+        System.out.println("########## Remaining Deck #######");
+        deck.displayDeck();
+}
