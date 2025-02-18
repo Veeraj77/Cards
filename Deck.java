@@ -5,9 +5,11 @@ import java.util.*;
 import javax.smartcardio.Card;
 class Deck{
 	ArrayList<Card> deck;
+
 	public Deck(){
 		deck=new ArrayList<>();
 	}
+
 	public void createDeck(){
 		String[] ranks={"2","3","4","5","6","7","8","9","10","J","K","Q","A"};
 		String[] suits={"Spades","Hearts","Diamonds","Clubs"};
@@ -19,6 +21,7 @@ class Deck{
 			}
 		}
 	}
+
 	public void displayDeck(){
 		for (Card card :deck){
 			System.out.println(card);
@@ -29,6 +32,8 @@ class Deck{
 		Collections.shuffle(deck);
 
 	}
+
+// method to select two randoms cards from deck
 	public void randomCards(){
 	Random random = new Random();
     	Card card1 = deck.get(random.nextInt(deck.size()));
@@ -43,6 +48,7 @@ class Deck{
         for (int i = 0; i < players; i++) {
             playersHands.add(new ArrayList<>());
         }
+
         // Distribute cards to each player
         for (int i = 0; i < cardsPerPlayer; i++) {
             for (int j = 0; j < players; j++) {
