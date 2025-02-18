@@ -39,5 +39,9 @@ class Deck{
 	 public ArrayList<ArrayList<Card>> distributeCards(int players, int cardsPerPlayer) {
         ArrayList<ArrayList<Card>> playersHands = new ArrayList<>();
 
+        // Initialize each player's hand
+        for (int i = 0; i < players; i++) {
+            playersHands.add(new ArrayList<>());
+        }
 }
 
