@@ -14,17 +14,17 @@ Distributing cards to multiple players
 Files Description
 
 
-1. Card.java
+    1. Card.java
 
 The Card class represents a single playing card.
 
-Attributes:
+  Attributes:
 
 String rank : Stores the rank of the card (2, 3, ..., J, Q, K, A)
 
 String suit : Stores the suit of the card (Spades, Hearts, Diamonds, Clubs)
 
-Methods:
+  Methods:
 
 Card(String rank, String suit) : Constructor to initialize card with rank and suit.
 
@@ -34,15 +34,15 @@ toString() : Returns the card's rank and suit in a readable format (e.g., "10 of
 
 
 
-2. Deck.java
+    2. Deck.java
 
 The Deck class represents a deck of 52 cards.
 
-Attributes:
+  Attributes:
 
 ArrayList<Card> deck : Stores the list of cards in the deck.
 
-Methods:
+  Methods:
 
 Deck() : Constructor to initialize an empty deck.
 
@@ -65,7 +65,7 @@ Returns: A list of player hands containing cards.
 
 
 
-3. Main.java
+    3. Main.java
 
 The Main class is the driver program to execute the functionality of the cards game.
 
